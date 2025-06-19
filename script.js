@@ -1,5 +1,5 @@
 document.getElementById("votingForm").addEventListener("submit", function(event) {
-  event.preventDefault(); // Prevent form from reloading the page
+  event.preventDefault();
 
   const name = document.getElementById("name").value.trim();
   const age = document.getElementById("age").value.trim();
@@ -23,3 +23,4 @@ document.getElementById("votingForm").addEventListener("submit", function(event)
     .then((message) => alert(message))
     .catch((error) => alert(error));
 });
+
